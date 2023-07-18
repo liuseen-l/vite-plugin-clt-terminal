@@ -1,6 +1,5 @@
 {
   "name": "@vite-plugin-clt-terminal/playground",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
