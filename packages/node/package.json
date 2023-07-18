@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@vite-plugin-clt-terminal/core": "workspace:^",
+    "birpc": "^0.2.12",
+    "execa": "^7.1.1",
+    "sirv": "^2.0.3"
+  }
 }
