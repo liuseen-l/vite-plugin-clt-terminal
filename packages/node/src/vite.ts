@@ -2,10 +2,10 @@ import { fileURLToPath } from 'node:url'
 import path from 'node:path'
 import { normalizePath } from 'vite'
 import type { PluginOption, ResolvedConfig, ViteDevServer } from 'vite'
-import sirv from 'sirv'
+// import sirv from 'sirv'
 import { PLUGIN_NAME, createRPCServer } from '@vite-plugin-clt-terminal/core'
 
-import { DIR_CLIENT } from './dir'
+// import { DIR_CLIENT } from './dir'
 
 import {
   execScript as _execScript,
@@ -26,11 +26,11 @@ export default function VitePluginClientTerminal(options: VitePluginClientTermin
   let config: ResolvedConfig
 
   function configureServer(server: ViteDevServer) {
-    const base = (server.config.base) || '/'
-    server.middlewares.use(`${base}__terminal_`, sirv(DIR_CLIENT, {
-      single: true,
-      dev: true,
-    }))
+    // const base = (server.config.base) || '/'
+    // server.middlewares.use(`${base}__terminal_`, sirv(DIR_CLIENT, {
+    //   single: true,
+    //   dev: true,
+    // }))
 
     const rpc = createRPCServer<RPCFunctions>(server.ws, {
       root: () => config.root,
