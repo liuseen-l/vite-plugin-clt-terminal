@@ -1,0 +1,20 @@
+{
+  "name": "vite-plugin-clt-terminal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.8",
+    "@antfu/ni": "^0.21.4",
+    "@types/node": "^20.4.2",
+    "@unocss/eslint-config": "^0.53.5",
+    "eslint": "^8.45.0",
+    "lint-staged": "^13.2.3"
+  }
+}
